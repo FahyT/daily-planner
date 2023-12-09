@@ -1,6 +1,7 @@
 //DOM elements
 let currentDayEl = $('#currentDay');
 let timeblockEls = $(".row");
+let containter = $('container');
 
 //time variables
 let today = dayjs();
@@ -11,6 +12,7 @@ currentDayEl.text(today.format("dddd, MMMM D"));
 
 // loop through all rows, color according to time, and add events text from local storage.
 timeblockEls.each(function() {
+    //color rows
     if ($(this).children().eq(0).data("hour") < currentHour) {
         $(this).children().eq(1).addClass("past");
     } else if ($(this).children().eq(0).data("hour") == currentHour) {
@@ -27,7 +29,3 @@ timeblockEls.each(function() {
 $('.saveBtn').on("click", function() {
     localStorage.setItem($(this).parent().children().eq(0).data("hour"), $(this).parent().children().eq(1).val());
 })
-
-
-
-
