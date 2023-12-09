@@ -1,7 +1,6 @@
 //DOM elements
 let currentDayEl = $('#currentDay');
 let timeblockEls = $(".row");
-let textboxEls = $("textarea");
 
 //time variables
 let today = dayjs();
