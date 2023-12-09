@@ -69,9 +69,11 @@ header {
   align-items: center;
 }
 
-.saveBtn i:hover {
+.saveBtn:hover {
   font-size: 20px;
+  color: black;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 input[type="text"]
