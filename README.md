@@ -20,7 +20,7 @@ The planner will colour the rows: grey rows are in the past, the red row is the 
 
 ## Credits
 
-https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript was used to understand how to get information out of a text input field in HTML.
+[https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript](https://api.jquery.com/parent/) was used to understand upward DOM traversal.
 
 ## License
 
