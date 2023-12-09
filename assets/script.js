@@ -3,13 +3,14 @@ let currentDayEl = $('#currentDay');
 let timeblockEls = $(".row");
 let textboxEls = $("textarea");
 
-//get today and put it at the top of the page
+//time variables
 let today = dayjs();
-currentDayEl.text(today.format("dddd, MMMM D"));
-
 let currentHour = dayjs().hour();
 
-// loop through all rows and color according to time, and add events from local storage.
+//get today and put it at the top of the page
+currentDayEl.text(today.format("dddd, MMMM D"));
+
+// loop through all rows, color according to time, and add events text from local storage.
 timeblockEls.each(function() {
     if ($(this).children().eq(0).data("hour") < currentHour) {
         $(this).children().eq(1).addClass("past");
