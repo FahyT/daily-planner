@@ -6,7 +6,7 @@ A calendar application that allows a user to save events for each hour of the da
 
 A web app written in javascript, HTML and CSS that displays a daily planner in which the user can record events that are stored locally.
 
-A link to the application can be found here:
+A link to the application can be found here: https://fahyt.github.io/daily-planner/
 
 ## Installation
 
